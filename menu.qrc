@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>TemplateGameInterface.qml</file>
+        <file>ComponentAlert.qml</file>
+        <file>numbers-increase/NumbersIncrease.qml</file>
+        <file>numbers-reverse/NumbersReverse.qml</file>
+    </qresource>
+</RCC>
