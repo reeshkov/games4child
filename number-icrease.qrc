@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>numbers-increase/main.qml</file>
-        <file>numbers-increase/NumbersIncrease.qml</file>
-        <file>TemplateGameInterface.qml</file>
-    </qresource>
-</RCC>
