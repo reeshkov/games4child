@@ -17,7 +17,7 @@ SOURCES += \
         main.cpp
 
 RESOURCES = \
-    numbers-reverse/number-reverse.qrc
+    numbers-reverse/numbers-reverse.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

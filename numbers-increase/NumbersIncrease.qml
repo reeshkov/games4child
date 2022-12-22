@@ -5,7 +5,7 @@ import "qrc:/.."
 TemplateGameInterface{
     id: numbersincrease
     property int size: Math.pow(gameDifficult,2)
-    property int count: 1
+    property int count: 3
     ListModel{
         id: listItems
     }

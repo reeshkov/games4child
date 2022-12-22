@@ -1,6 +1,7 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.12
+import "qrc:/modules/LoaderStack/LoaderStack"
 
 ApplicationWindow {
     id: window
@@ -14,22 +15,26 @@ ApplicationWindow {
         RowLayout {
              anchors.fill: parent
              ToolButton {
-                 text: qsTr("‹")
-                 onClicked: stack.pop()
+                 text: qsTr("Random increase")
+                 onClicked: {
+                     loaderstack.unLoadAll(function(){
+                         loaderstack.setSource("qrc:/numbers-increase/numbers-increase.qml");
+                    });
+                 }
              }
-             Label {
-                 text: "Menu"
-                 elide: Label.ElideRight
-                 horizontalAlignment: Qt.AlignHCenter
-                 verticalAlignment: Qt.AlignVCenter
-                 Layout.fillWidth: true
+             ToolButton {
+                 text: qsTr("Set && decrease")
+                 onClicked: {
+                     loaderstack.unLoadAll(function(){
+                         loaderstack.setSource("qrc:/numbers-reverse/numbers-reverse.qml");
+                    });
+                 }
              }
          }
      }
-
-     StackView {
-         id: stack
-         anchors.fill: parent
-     }
-
+    LoaderStack {
+        id: loaderstack
+        width: parent.width
+        height: parent.height
+    }
 }

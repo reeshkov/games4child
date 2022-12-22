@@ -5,5 +5,10 @@
         <file>ComponentAlert.qml</file>
         <file>numbers-increase/NumbersIncrease.qml</file>
         <file>numbers-reverse/NumbersReverse.qml</file>
+        <file>modules/LoaderStack/LoaderStack/LoaderStack.qml</file>
+        <file>modules/LoaderStack/LoaderStack/LoaderStack.qml.js</file>
+        <file>modules/LoaderStack/LoaderStack/qmldir</file>
+        <file>numbers-increase/numbers-increase.qml</file>
+        <file>numbers-reverse/numbers-reverse.qml</file>
     </qresource>
 </RCC>
