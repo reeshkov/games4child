@@ -17,17 +17,17 @@ ApplicationWindow {
              ToolButton {
                  text: qsTr("Random increase")
                  onClicked: {
-                     loaderstack.unLoadAll(function(){
+                     //loaderstack.unLoadAll(function(){
                          loaderstack.setSource("qrc:/numbers-increase/numbers-increase.qml");
-                    });
+                    //});
                  }
              }
              ToolButton {
                  text: qsTr("Set && decrease")
                  onClicked: {
-                     loaderstack.unLoadAll(function(){
+                     //loaderstack.unLoadAll(function(){
                          loaderstack.setSource("qrc:/numbers-reverse/numbers-reverse.qml");
-                    });
+                    //});
                  }
              }
          }
@@ -36,5 +36,6 @@ ApplicationWindow {
         id: loaderstack
         width: parent.width
         height: parent.height
+        maximumStackLength: 1
     }
 }
